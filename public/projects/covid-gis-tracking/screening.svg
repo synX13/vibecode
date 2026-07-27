@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#111826"/>
+  <rect width="1200" height="44" fill="#161F30"/>
+  <circle cx="24" cy="22" r="6" fill="#FF5F57"/>
+  <circle cx="46" cy="22" r="6" fill="#FEBC2E"/>
+  <circle cx="68" cy="22" r="6" fill="#28C840"/>
+  <rect x="100" y="10" width="380" height="24" rx="6" fill="#0A0E17"/>
+  <text x="118" y="26" font-family="monospace" font-size="12" fill="#8993A6">covid-gis.sleman.internal/screening</text>
+
+  <!-- screening form -->
+  <rect x="60" y="90" width="500" height="570" rx="8" fill="#161F30" stroke="#232C3E"/>
+  <text x="84" y="126" font-family="monospace" font-size="15" fill="#E7ECF5">Citizen Self-Screening</text>
+  <line x1="60" y1="144" x2="560" y2="144" stroke="#232C3E"/>
+
+  <g font-family="monospace" font-size="10" fill="#8993A6">
+    <text x="84" y="180">FULL NAME</text>
+    <rect x="84" y="190" width="440" height="32" rx="6" fill="#0A0E17" stroke="#232C3E"/>
+
+    <text x="84" y="248">NIK / ID NUMBER</text>
+    <rect x="84" y="258" width="440" height="32" rx="6" fill="#0A0E17" stroke="#232C3E"/>
+
+    <text x="84" y="316">SYMPTOMS</text>
+    <rect x="84" y="326" width="210" height="28" rx="14" fill="#D9A44122" stroke="#D9A441"/>
+    <text x="104" y="344" fill="#D9A441">Fever</text>
+    <rect x="304" y="326" width="220" height="28" rx="14" fill="#0A0E17" stroke="#232C3E"/>
+    <text x="324" y="344" fill="#8993A6">Loss of smell</text>
+
+    <text x="84" y="392">RECENT TRAVEL / CONTACT</text>
+    <rect x="84" y="402" width="440" height="70" rx="6" fill="#0A0E17" stroke="#232C3E"/>
+
+    <rect x="84" y="500" width="440" height="42" rx="8" fill="#D9A441"/>
+    <text x="260" y="526" fill="#171208" font-size="12">Submit Screening</text>
+  </g>
+
+  <!-- dashboard side -->
+  <rect x="590" y="90" width="550" height="270" rx="8" fill="#161F30" stroke="#232C3E"/>
+  <text x="614" y="122" font-family="monospace" font-size="13" fill="#E7ECF5">Today's Screenings</text>
+  <g font-family="monospace" font-size="11" fill="#8993A6">
+    <rect x="614" y="150" width="150" height="70" rx="6" fill="#0A0E17"/>
+    <text x="634" y="182" font-size="20" fill="#D9A441">86</text>
+    <text x="634" y="204" font-size="9">FLAGGED</text>
+
+    <rect x="784" y="150" width="150" height="70" rx="6" fill="#0A0E17"/>
+    <text x="804" y="182" font-size="20" fill="#35A98C">1,204</text>
+    <text x="804" y="204" font-size="9">CLEARED</text>
+
+    <rect x="954" y="150" width="164" height="70" rx="6" fill="#0A0E17"/>
+    <text x="974" y="182" font-size="20" fill="#E7ECF5">1,290</text>
+    <text x="974" y="204" font-size="9">TOTAL TODAY</text>
+  </g>
+  <polyline points="614,320 660,300 706,310 752,280 798,290 844,260 890,270 936,240 982,250 1028,230 1074,240 1120,220"
+    fill="none" stroke="#35A98C" stroke-width="2"/>
+
+  <!-- contact tracing list -->
+  <rect x="590" y="380" width="550" height="280" rx="8" fill="#161F30" stroke="#232C3E"/>
+  <text x="614" y="412" font-family="monospace" font-size="13" fill="#E7ECF5">Contact Tracing Queue</text>
+  <g font-family="monospace" font-size="11" fill="#8993A6">
+    <circle cx="620" cy="444" r="4" fill="#D9A441"/>
+    <text x="636" y="448">Case #2291 — 6 contacts identified</text>
+    <circle cx="620" cy="480" r="4" fill="#35A98C"/>
+    <text x="636" y="484">Case #2287 — tracing complete</text>
+    <circle cx="620" cy="516" r="4" fill="#D9A441"/>
+    <text x="636" y="520">Case #2283 — 3 contacts identified</text>
+    <circle cx="620" cy="552" r="4" fill="#8993A6"/>
+    <text x="636" y="556">Case #2279 — pending interview</text>
+    <circle cx="620" cy="588" r="4" fill="#35A98C"/>
+    <text x="636" y="592">Case #2275 — tracing complete</text>
+  </g>
+
+  <rect x="880" y="700" width="296" height="30" rx="6" fill="#0A0E17" stroke="#D9A441"/>
+  <text x="900" y="720" font-family="monospace" font-size="11" fill="#D9A441">UI MOCKUP — SAMPLE PLACEHOLDER</text>
+</svg>

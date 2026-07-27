@@ -1,3 +1,4 @@
+import Link from "next/link";
 import site from "@/data/site.json";
 
 export default function Projects() {
@@ -32,16 +33,26 @@ export default function Projects() {
                   {p.impl}
                 </div>
               )}
-              {p.link && (
-                <a
-                  href={p.link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-[12.5px] text-accent hover:underline"
-                >
-                  {p.link.label}
-                </a>
-              )}
+              <div className="flex flex-wrap items-center gap-4">
+                {p.link && (
+                  <a
+                    href={p.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[12.5px] text-accent hover:underline"
+                  >
+                    {p.link.label}
+                  </a>
+                )}
+                {p.slug && (
+                  <Link
+                    href={`/projects/${p.slug}`}
+                    className="inline-flex items-center gap-1.5 rounded-md border border-line px-3 py-1.5 font-mono text-[12.5px] text-ink transition-colors hover:border-accent hover:text-accent"
+                  >
+                    Case Study →
+                  </Link>
+                )}
+              </div>
             </div>
           ))}
         </div>

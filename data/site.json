@@ -121,37 +121,102 @@
         "title": "Linguise — AI-Powered Website Translation Platform",
         "desc": "A cloud-based platform that automatically translates and localizes websites into multiple languages while preserving SEO performance and content sync.",
         "impl": null,
-        "link": { "label": "linguise.com ↗", "href": "https://linguise.com" }
+        "link": { "label": "linguise.com ↗", "href": "https://linguise.com" },
+        "slug": null
       },
       {
         "kind": "Full-Stack",
         "title": "Shieldtag — Product Authentication & Traceability",
         "desc": "A SaaS platform that helps brands protect products from counterfeiting through authentication, serialization, and end-to-end supply chain traceability.",
         "impl": null,
-        "link": { "label": "shieldtag.co ↗", "href": "https://shieldtag.co" }
+        "link": { "label": "shieldtag.co ↗", "href": "https://shieldtag.co" },
+        "slug": null
       },
       {
         "kind": "Enterprise",
         "title": "E-Office — Document & Workflow Management",
         "desc": "A digital correspondence and workflow platform that streamlines document processing, approvals, and dispositions across management levels.",
         "impl": "INALUM, JIH Hospital, BKKBN Yogyakarta, Bawaslu NTB, UII, Blora Regency, Sleman Regency",
-        "link": null
+        "link": null,
+        "slug": "e-office"
       },
       {
         "kind": "Enterprise",
         "title": "E-Monev — Government Monitoring & Evaluation",
         "desc": "A web-based system that helps government agencies track budget realization, project progress, and performance indicators in real time.",
         "impl": "Blitar Regency, Central Lampung Regency, Gondokusuman District, Blora Regency, Grobogan Regency",
-        "link": null
+        "link": null,
+        "slug": "e-monev"
       },
       {
         "kind": "Public Health",
         "title": "COVID-19 Screening & GIS Tracking System",
         "desc": "A public health platform built during the pandemic to support citizen screening, contact tracing, case monitoring, and geographic visualization.",
         "impl": "Sleman Regency Government · 2020",
-        "link": null
+        "link": null,
+        "slug": "covid-gis-tracking"
       }
     ]
+  },
+
+  "caseStudies": {
+    "e-office": {
+      "kind": "Enterprise",
+      "title": "E-Office — Enterprise Document & Workflow Management System",
+      "description": "A digital correspondence and workflow management platform that replaces paper-based approval chains with a centralized, trackable system — built for government and enterprise organizations with multi-level sign-off requirements.",
+      "techStack": ["PHP", "MySQL", "Vue.js", "Bootstrap", "LDAP Integration"],
+      "challenge": "Correspondence and approvals moved between departments on paper or over email, with no central record of where a document was in the process. That meant delays, lost documents, and no audit trail when something needed to be traced back.",
+      "approach": "I built a centralized workflow engine that routes each document through a configurable approval chain matching the institution's own org structure, with role-based access so every user only sees what's relevant to them, and a full status log at every step.",
+      "outcome": "Deployed across 7 institutions — including INALUM, BKKBN Yogyakarta, and several regency governments — turning correspondence that used to take days into a same-day approval flow, with a complete digital audit trail.",
+      "implementations": [
+        "INALUM",
+        "JIH Hospital Indonesia",
+        "BKKBN Yogyakarta",
+        "Bawaslu West Nusa Tenggara",
+        "Islamic University of Indonesia",
+        "Blora Regency Government",
+        "Sleman Regency Government"
+      ],
+      "screenshots": [
+        { "src": "/projects/e-office/user-groups.png", "alt": "E-Office Lazismu — User Groups screen listing system users, roles, and access groups", "width": 1143, "height": 580 },
+        { "src": "/projects/e-office/user-authorization.png", "alt": "E-Office Lazismu — User Authorization screen for setting module and action permissions per group", "width": 1113, "height": 574 }
+      ],
+      "screenshotsNote": "Real screenshots from the E-Office Lazismu user guide."
+    },
+    "e-monev": {
+      "kind": "Enterprise",
+      "title": "E-Monev — Government Monitoring & Evaluation Platform",
+      "description": "A web-based monitoring and evaluation system that gives government agencies a real-time view of budget realization, project progress, and performance indicators — replacing manual spreadsheet consolidation.",
+      "techStack": ["PHP", "MySQL", "Vue.js", "Chart.js", "Bootstrap"],
+      "challenge": "Regional governments tracked budget realization and project KPIs through spreadsheets submitted manually by each department. Consolidating them into a single up-to-date picture for leadership was slow and error-prone.",
+      "approach": "I built a centralized reporting platform where departments submit progress data directly through the system, with dashboards that roll budget realization, project milestones, and KPI tracking up to leadership in real time.",
+      "outcome": "Adopted by 5 regional governments to track budget realization and project progress in real time, cutting out the manual back-and-forth of spreadsheet consolidation.",
+      "implementations": [
+        "Blitar Regency Government",
+        "Central Lampung Regency Government",
+        "Gondokusuman District Government",
+        "Blora Regency Government",
+        "Grobogan Regency Government"
+      ],
+      "screenshots": [
+        { "src": "/projects/screenshot-404.svg", "alt": "E-Monev screenshot not available — internal government system, no public access", "width": 1200, "height": 750 }
+      ],
+      "screenshotsNote": "This is an internal government system with no public URL, so no real screenshot is available yet — swap in a real one at /public/projects/e-monev/ and update this entry in data/site.json."
+    },
+    "covid-gis-tracking": {
+      "kind": "Public Health",
+      "title": "COVID-19 Screening & GIS Tracking System",
+      "description": "A public health platform built during the pandemic to support citizen self-screening, contact tracing, case monitoring, and geographic visualization of health data for local officials.",
+      "techStack": ["PHP", "MySQL", "Vue.js", "Leaflet.js", "GIS Mapping"],
+      "challenge": "In the early stages of the pandemic, Sleman Regency needed a fast way to screen citizens, trace contacts, and see where cases were emerging geographically — with no existing system in place to do any of it.",
+      "approach": "I built a citizen self-screening portal that feeds a case-monitoring dashboard, plus a GIS layer plotting screening results and confirmed cases geographically so health officials could spot emerging clusters early.",
+      "outcome": "Deployed for Sleman Regency Government in 2020, giving health officials a real-time geographic view of screening and case data during a critical early phase of the pandemic response.",
+      "implementations": ["Sleman Regency Government · 2020"],
+      "screenshots": [
+        { "src": "/projects/screenshot-404.svg", "alt": "COVID GIS tracking screenshot not available — internal government system, no public access", "width": 1200, "height": 750 }
+      ],
+      "screenshotsNote": "This is an internal government system with no public URL, so no real screenshot is available yet — swap in a real one at /public/projects/covid-gis-tracking/ and update this entry in data/site.json."
+    }
   },
 
   "map": {
