@@ -22,7 +22,7 @@ export default function Contact() {
             </span>
           </h2>
           <p className="text-xl text-muted max-w-3xl mx-auto">
-            Let's build something amazing together.
+            Let&apos;s build something amazing together.
           </p>
         </motion.div>
 
@@ -123,12 +123,12 @@ export default function Contact() {
           >
             <Card className="p-8 bg-card/50 backdrop-blur-sm border-border h-full">
               <h3 className="text-2xl font-bold text-text mb-6">
-                Let's Connect
+                Let&apos;s Connect
               </h3>
               <p className="text-muted mb-8">
-                I'm always interested in hearing about new opportunities, 
+                I&apos;m always interested in hearing about new opportunities, 
                 especially ambitious projects. Whether you have a question or 
-                just want to say hi, I'll try my best to get back to you!
+                just want to say hi, I&apos;ll try my best to get back to you!
               </p>
               <div className="space-y-4">
                 <div className="p-4 bg-primary/10 border border-primary/20 rounded-lg">
