@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "logoPrefix": "aw",
+    "logoSuffix": "/13",
+    "status": "available for work",
+    "links": [
+      { "href": "#about", "label": "about" },
+      { "href": "#skills", "label": "skills" },
+      { "href": "#experience", "label": "experience" },
+      { "href": "#projects", "label": "projects" },
+      { "href": "#map", "label": "infra" },
+      { "href": "#contact", "label": "contact" }
+    ]
+  },
+
+  "hero": {
+    "eyebrow": "full stack developer / devops engineer",
+    "nameFirst": "Agus",
+    "nameLast": "Wikamto",
+    "roleLine": "Node.js & Next.js on the front, {{teal:Docker · Kubernetes · Terraform · AWS}} underneath.",
+    "lede": "I build products end to end — from Node.js/Express backends and databases with billions of rows, to deployment pipelines that run in production without manual intervention.",
+    "ctaPrimary": { "label": "View Projects", "href": "#projects" },
+    "ctaSecondary": { "label": "Download CV", "href": "/CV_Agus_Wikamto.pdf" },
+    "terminal": {
+      "windowTitle": "agus@aw13 — ssh session",
+      "lines": [
+        { "delay": 0.1, "text": "{{teal:~$}} ssh agus@production --fleet=linguise,shieldtag", "cursor": false },
+        { "delay": 0.5, "text": "connecting to {{accent:3 environments}}...", "cursor": false },
+        { "delay": 0.9, "text": "auth ok · {{teal:key accepted}}", "cursor": false },
+        { "delay": 1.3, "text": "mounting stack → [node.js] [nginx/openresty] [mysql]", "cursor": false },
+        { "delay": 1.7, "text": "checking database health...", "cursor": false },
+        { "delay": 2.1, "text": "mysql: {{teal:optimized}} · rows > 2.4B · query p95 {{teal:improved 63%}}", "cursor": false },
+        { "delay": 2.5, "text": "failover strategy: {{teal:armed}}", "cursor": false },
+        { "delay": 2.9, "text": "ansible playbooks: {{teal:idempotent, 0 drift}}", "cursor": false },
+        { "delay": 3.3, "text": "{{muted:10+ years, 3 companies, 0 downtime incidents this quarter.}}", "cursor": false },
+        { "delay": 3.7, "text": "{{teal:~$}}", "cursor": true }
+      ]
+    }
+  },
+
+  "about": {
+    "label": "about",
+    "title": "From the code to the servers that run it.",
+    "paragraphs": [
+      "I started my career as a {{ink:Full Stack Developer}} in 2015, building enterprise applications for government and private sector clients with PHP, Vue.js, and MySQL. Over time my scope widened into infrastructure — and now I work across both: the product, and the platform that runs it.",
+      "Today I'm a {{ink:DevOps Engineer}} at Linguise, a French website-translation platform, where I optimize MySQL databases holding billions of rows, design failover strategies, and automate the entire deployment process with Ansible and CI/CD.",
+      "Before that, at Shieldtag, I led the engineering team building a product authentication & traceability platform — from the Node.js/Express backend to the Next.js frontend."
+    ]
+  },
+
+  "stats": [
+    { "num": "10+", "label": "Years of Experience" },
+    { "num": "5", "label": "Platforms Shipped" },
+    { "num": "11+", "label": "Institutions Served" },
+    { "num": "2.4B+", "label": "DB Rows Optimized" }
+  ],
+
+  "skills": {
+    "label": "skills",
+    "title": "The stack I work with every day.",
+    "groups": [
+      {
+        "title": "Frontend & Backend",
+        "tags": ["Next.js", "Vue.js", "Node.js", "Express.js", "NestJS", "PHP", "MySQL", "PostgreSQL", "Citus", "Prisma", "Redis", "MongoDB", "Meilisearch"]
+      },
+      {
+        "title": "DevOps & Infrastructure",
+        "tags": ["Docker", "Kubernetes", "Terraform", "Helm", "Ansible", "Bash", "CI/CD", "GitHub Actions", "Bitbucket", "AWS (EC2, S3, RDS, VPC, IAM)", "Linux/Ubuntu", "Nginx", "OpenResty", "LiteSpeed", "Prometheus", "Grafana", "New Relic"]
+      }
+    ]
+  },
+
+  "experience": {
+    "label": "career",
+    "title": "Work experience.",
+    "roles": [
+      {
+        "period": "12/2024 — Present",
+        "role": "DevOps Engineer",
+        "org": "Linguise · France (Remote)",
+        "current": true,
+        "items": [
+          "Manage and optimize production infrastructure for a website translation platform.",
+          "Optimize MySQL databases containing billions of records.",
+          "Design redundancy, failover, and disaster recovery strategies.",
+          "Automate deployments and infrastructure management using Ansible and CI/CD pipelines.",
+          "Manage OpenResty, Nginx, Linux servers, and cloud infrastructure."
+        ]
+      },
+      {
+        "period": "12/2021 — 12/2024",
+        "role": "Full Stack Developer & DevOps Engineer",
+        "org": "Shieldtag · Jakarta (Remote)",
+        "current": false,
+        "items": [
+          "Led the engineering team in developing product authentication and traceability solutions.",
+          "Designed and developed backend services using Node.js and Express.js.",
+          "Built and maintained frontend applications using Next.js."
+        ]
+      },
+      {
+        "period": "06/2015 — 12/2021",
+        "role": "Full Stack Developer",
+        "org": "PT Integra Inovasi Indonesia · Yogyakarta",
+        "current": false,
+        "items": [
+          "Developed enterprise web applications using PHP, Vue.js, and MySQL.",
+          "Built frontend and backend features for government and private-sector projects.",
+          "Performed application maintenance, troubleshooting, and optimization."
+        ]
+      }
+    ]
+  },
+
+  "projects": {
+    "label": "work",
+    "title": "Platforms I've built & run.",
+    "items": [
+      {
+        "kind": "DevOps",
+        "title": "Linguise — AI-Powered Website Translation Platform",
+        "desc": "A cloud-based platform that automatically translates and localizes websites into multiple languages while preserving SEO performance and content sync.",
+        "impl": null,
+        "link": { "label": "linguise.com ↗", "href": "https://linguise.com" }
+      },
+      {
+        "kind": "Full-Stack",
+        "title": "Shieldtag — Product Authentication & Traceability",
+        "desc": "A SaaS platform that helps brands protect products from counterfeiting through authentication, serialization, and end-to-end supply chain traceability.",
+        "impl": null,
+        "link": { "label": "shieldtag.co ↗", "href": "https://shieldtag.co" }
+      },
+      {
+        "kind": "Enterprise",
+        "title": "E-Office — Document & Workflow Management",
+        "desc": "A digital correspondence and workflow platform that streamlines document processing, approvals, and dispositions across management levels.",
+        "impl": "INALUM, JIH Hospital, BKKBN Yogyakarta, Bawaslu NTB, UII, Blora Regency, Sleman Regency",
+        "link": null
+      },
+      {
+        "kind": "Enterprise",
+        "title": "E-Monev — Government Monitoring & Evaluation",
+        "desc": "A web-based system that helps government agencies track budget realization, project progress, and performance indicators in real time.",
+        "impl": "Blitar Regency, Central Lampung Regency, Gondokusuman District, Blora Regency, Grobogan Regency",
+        "link": null
+      },
+      {
+        "kind": "Public Health",
+        "title": "COVID-19 Screening & GIS Tracking System",
+        "desc": "A public health platform built during the pandemic to support citizen screening, contact tracing, case monitoring, and geographic visualization.",
+        "impl": "Sleman Regency Government · 2020",
+        "link": null
+      }
+    ]
+  },
+
+  "map": {
+    "label": "infrastructure footprint",
+    "title": "Nodes I've built and kept running.",
+    "caption": "Every node on this map was one I worked on directly — from the server, to the database, to the deploy that shipped it.",
+    "core": { "x": 500, "y": 190, "label": "aw13 / core" },
+    "nodes": [
+      { "name": "Linguise", "sub": "France · Remote", "x": 120, "y": 70, "remote": true },
+      { "name": "Central Lampung", "sub": "E-Monev", "x": 230, "y": 290, "remote": false },
+      { "name": "Grobogan", "sub": "E-Monev", "x": 330, "y": 250, "remote": false },
+      { "name": "Blora", "sub": "E-Office · E-Monev", "x": 400, "y": 300, "remote": false },
+      { "name": "BKKBN Yogyakarta", "sub": "E-Office", "x": 460, "y": 100, "remote": false },
+      { "name": "Sleman", "sub": "E-Office · COVID GIS", "x": 520, "y": 290, "remote": false },
+      { "name": "Gondokusuman", "sub": "E-Monev", "x": 600, "y": 110, "remote": false },
+      { "name": "Shieldtag / Jakarta", "sub": "Full-Stack · DevOps", "x": 660, "y": 280, "remote": false },
+      { "name": "UII", "sub": "E-Office", "x": 720, "y": 90, "remote": false },
+      { "name": "INALUM", "sub": "E-Office", "x": 790, "y": 250, "remote": false },
+      { "name": "Blitar", "sub": "E-Monev", "x": 850, "y": 110, "remote": false },
+      { "name": "Bawaslu NTB", "sub": "E-Office", "x": 900, "y": 290, "remote": false }
+    ]
+  },
+
+  "contact": {
+    "title": "Let's work together.",
+    "subtitle": "Open to full-time roles, contract work, and infrastructure consulting — remote or based in Yogyakarta/Jakarta.",
+    "links": [
+      { "label": "✉ aguswikamto13@gmail.com", "href": "mailto:aguswikamto13@gmail.com" },
+      { "label": "☎ +62 812 2823 6579", "href": "tel:+6281228236579" },
+      { "label": "GitHub → synX13", "href": "https://github.com/synX13" },
+      { "label": "LinkedIn ↗", "href": "https://www.linkedin.com/in/207453114/" },
+      { "label": "aw13.info ↗", "href": "https://aw13.info" }
+    ]
+  },
+
+  "footer": {
+    "copyright": "aw/13 © 2026 Agus Wikamto.",
+    "cvLabel": "Download CV (PDF)",
+    "cvHref": "/CV_Agus_Wikamto.pdf"
+  }
+}
